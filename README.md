@@ -1,3 +1,5 @@
 # BugFix-web-development
-Simple html/css/js page 
-Use this as an example 
+Simple Web page
+A Demo for Students in BugFIxers. 
+for more ideas and code questions --> w3schools.com/
+or Aks me :)
