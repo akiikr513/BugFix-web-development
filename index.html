@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr Billu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Add css code here or use <style> tag -->
+  </head>
+  <body>
+    <!-- nav bar or menu bar component -->
+    <div class="topnav">
+      <a class="active" href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contactMe">Contact me</a>
+    </div>
+    <!--end of navigation component -->
+
+    <!-- Make new component -->
+
+    <div style="padding-left: 16px;">
+      <h2>Hi There...!</h2>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://i.ibb.co/4JrcP6v/a21.jpg"
+              alt="picture"
+              style="width: 300px; height: 300px;"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Billu</h1>
+            <p>Skills: Miyauu & Purrr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about" style="padding-left: 16px;">
+      <p>Title</p>
+      <p>More about me</p>
+      <p>few details</p>
+      <p>and some more....</p>
+    </div>
+    <!-- End new component -->
+
+    <!-- image component -->
+    <div id="gallery">
+      <div style="text-align: center;">
+        <h2>My Image Gallery</h2>
+      </div>
+
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img
+            src="https://i.ibb.co/31JfgGn/a2.jpg"
+            alt="Mountains"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://i.ibb.co/f2t6Jgh/a6.jpg"
+            alt="Nature"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://i.ibb.co/4JrcP6v/a21.jpg"
+            alt="Mr Billu"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://i.ibb.co/pvk6g0G/a14.jpg"
+            alt="Dragon Fly"
+            onclick="myFunction(this);"
+          />
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >&times;</span
+        >
+        <img id="expandedImg" style="width: 100%;" />
+        <div id="imgtext"></div>
+      </div>
+    </div>
+
+    <!-- image component ends -->
+  </body>
+  <footer>
+    <div id="contactMe" style="text-align: center;">
+      <h2>Follow Me</h2>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <!-- add social media icon and links -->
+  </footer>
+  <!-- add java scripts here-->
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById('expandedImg');
+      var imgText = document.getElementById('imgtext');
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = 'block';
+    }
+  </script>
+  <script src="js/index.js"></script>
+</html>
